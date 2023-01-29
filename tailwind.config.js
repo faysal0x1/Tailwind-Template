@@ -1,19 +1,20 @@
-/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = {
-  darkMode: "class",
-  content: ["*"],
-  theme: {
-
-    extend: {
-      colors: {
-        gray: { 800: "#991b1" }
-      },
-      container: {
-        center: true,
-        width: "90%",
-
-      },
+    content: ['./*.html'],
+    darkMode: 'class', // or 'media' or 'class'
+    theme: {
+        extend: {
+            colors: {
+                //add your own color
+                //https://tailwindcss.com/docs/customizing-colors
+            },
+            container: {
+                center: true,
+            },
+        },
     },
-  },
-  plugins: [],
+    variants: {
+        extend: {},
+    },
+    plugins: [],
 }
