@@ -2,8 +2,9 @@
   "name": "tw",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite tailwindcss -i ./assets/css/styles.css -o ./dist/output.css --watch --open",
     "build": "vite build",
+    "css":"tailwindcss -i ./assets/css/styles.css -o ./dist/output.css --watch",
     "serve": "vite preview"
   },
   "devDependencies": {
